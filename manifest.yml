@@ -1,0 +1,31 @@
+# Use double brackets since `plugins` is an array of tables.
+[[context.production.plugins]]
+package = "@netlify/plugin-sitemap"
+# Configuration for a plugin published to npm
+[[plugins]]
+package = "netlify-plugin-lighthouse"
+
+  [plugins.inputs]
+  output_path = "reports/lighthouse.html"
+
+# Configuration for a local plugin
+[[plugins]]
+package = "/plugins/netlify-plugin-hello-world"
+# Use Cypress plugin for this site.
+# This section, by itself, configures the plugin
+# for all deploy contexts (production, branch deploys, Deploy Previews).
+[[plugins]]
+package = "netlify-plugin-cypress"
+  [plugins.inputs]
+  record = true
+
+# Don’t record Cypress tests in Deploy Previews.
+# Since this entry is more specific, it overrides the entry above.
+# `context.deploy-preview.plugins` and `package` must be included.
+[[context.deploy-preview.plugins]]
+package = "netlify-plugin-cypress"
+  # Use single brackets since `inputs` is an object property
+  [context.deploy-preview.plugins.inputs]
+  record = false
+`git` config [<file-option>] [--type=<type>] [--fixed-value] [--show-origin] [--show-scope] [-z|--null] name [value [value-pattern]] git config [<file-option>] [--type=<type>] --add name value git config [<file-option>] [--type=<type>] [--fixed-value] --replace-all name value [value-pattern] git config [<file-option>] [--type=<type>] [--show-origin] [--show-scope] [-z|--null] [--fixed-value] --get name [value-pattern] git config [<file-option>] [--type=<type>] [--show-origin] [--show-scope] [-z|--null] [--fixed-value] --get-all name [value-pattern] git config [<file-option>] [--type=<type>] [--show-origin] [--show-scope] [-z|--null] [--fixed-value] [--name-only] --get-regexp name_regex [value-pattern] git config [<file-option>] [--type=<type>] [-z|--null] --get-urlmatch name URL git config [<file-option>] [--fixed-value] --unset name [value-pattern] git config [<file-option>] [--fixed-value] --unset-all name [value-pattern] git config [<file-option>] --rename-section old_name new_name git config [<file-option>] --remove-section name git config [<file-option>] [--show-origin] [--show-scope] [-z|--null] [--name-only] -l | --list git config [<file-option>] --get-color name [default] git config [<file-option>] --get-colorbool name [stdout-is-tty] git config [<file-option>] -e | --edit
+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
