@@ -27,7 +27,7 @@
     "@zachleat/filter-container": "1.0.3",
     "autoprefixer": "10.4.7",
     "cssnano": "5.1.8",
-    "d3": "7.4.4",
+    "d3": "7.9.0",
     "dotenv": "16.0.1",
     "fast-glob": "3.2.11",
     "gray-matter": "4.0.3",
