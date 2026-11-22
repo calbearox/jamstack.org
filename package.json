@@ -32,7 +32,7 @@
     "fast-glob": "3.2.11",
     "gray-matter": "4.0.3",
     "i18n-iso-countries": "7.4.0",
-    "js-yaml": "3.14.1",
+    "js-yaml": "4.1.0",
     "lodash": "4.17.21",
     "luxon": "1.28.0",
     "markdown-it": "13.0.1",
